@@ -1,0 +1,5 @@
+1. select * from salespeople;
+2. select * from customers where rating=100;
+3. select * from customers where city is null;
+4. select max(o.amt) as Largest_order from salespeople s join orders o on s.snum=o.snum group by o.odate,s.snum;
+5. select * from orders order by cnum desc;
