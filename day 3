@@ -1,0 +1,5 @@
+11. select c.cname,s.sname from salespeople s join customers c on s.snum=c.snum where s.city=c.city;
+12. select max(amt) as Largest_order,o.snum from salespeople s join orders o on s.snum=o.snum group by o.snum;
+13. select * from customers where rating > 200 and city='San Jose';
+14. select sname,comm from salespeople where city='London';
+15. select o.* from orders o join salespeople s on o.snum=s.snum where s.sname='Motika';
