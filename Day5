@@ -1,0 +1,5 @@
+21.  select * from customers where cnum > 1000+(select snum from salespeople where sname="Serres");
+22.  select concat(round(comm*100),'%') as COMM_PERCENTAGE from salespeople;
+23.  select snum,odate,max(amt) as largest_order from orders group by snum,odate having max(amt)>=3000;
+24.  select snum,max(amt) as largest_order from orders where month(odate)=10 and day(odate)=3 group by snum;
+25.  select c.* from customers c where city in (select c.city from salespeople s join customers c on s.snum=c.snum where s.sname='Serres');
