@@ -1,0 +1,5 @@
+26.  select * from customers where rating>200;
+27.  select count(distinct sname) from customers c join salespeople s on s.snum=c.snum;
+28.  select c.cname,s.comm from salespeople s join customers c on s.snum=c.snum where s.comm>0.12;
+29.  select s.sname from salespeople s join customers c on s.snum=c.snum group by s.snum;
+30.  select s.* from salespeople s join customers c on s.snum=c.snum group by s.snum having count(*)>1;
