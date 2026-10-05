@@ -1,0 +1,5 @@
+31.  select sname from salespeople where sname like 'p__l%';
+32.  select cname from customers where left(cname,1) between 'A' and 'G';
+33.  select max(o.amt) as Max_Amount from orders o join salespeople s on s.snum=o.snum where s.sname in('Serres','Rifkin') group by s.snum;
+34.  select snum as SNUM, sname as SNAME,comm as COMMISSION,city as CITY from salespeople; 
+35.  select cname from customers where left(cname,1) between 'A' and 'G';
