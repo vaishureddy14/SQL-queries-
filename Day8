@@ -1,1 +1,5 @@
-
+36. select * from salespeople s cross join customers c;
+37. select * from orders where odate='2026-10-04' and amt>(select avg(o.amt) from orders o where o.odate='2026-10-04');
+38.
+39. select sum(amt) as Total from orders group by odate order by sum(amt) desc;
+40. select rating as Rating,cname as Customer from customers where city='San Jose';
