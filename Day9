@@ -1,0 +1,5 @@
+41. select * from orders where amt < any (select o.amt from orders o join customers c on o.cnum=c.cnum where c.city='San Jose');
+42. select * from orders where amt > (select avg(amt) from orders o join customers c on c.cnum=o.cnum);
+43. select max(rating),city from customers group by city;
+44. select s.comm * amt from salespeople s join orders o on s.snum=o.snum join customers c on c.cnum=o.cnum where rating>100;
+45. select count(*) from customers where rating>(select avg(rating) from customers where city='San Jose');
