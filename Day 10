@@ -1,0 +1,5 @@
+46. select * from salespeople s1 cross join salespeople s2;
+47. select * from salespeople where city='London' or city='Barcelona';
+48. select s.sname from salespeople s join customers c on s.snum=c.snum group by s.snum having count(*)=1;
+49. select c1.cname AS Customer1,c2.cname AS Customer2, c1.snum from Customer c1 join Customer c2 on c1.snum = c2.snum and c1.cnum < c2.cnum;
+50. select * from orders where amt>1000;
