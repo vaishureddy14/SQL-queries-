@@ -1,0 +1,7 @@
+51. select c.cname as CUSTOMER,o.onum as ORDERNUMBER from customers c join orders o on c.cnum=o.cnum;
+52. select s.sname as SalesPerson,s.snum as SalesNumber from salespeople s join
+    customers c on c.snum!=s.snum and c.city=s.city;
+53. select c.cname from customers c where c.rating > any(select c.rating from customers c join salespeople s on
+    -> c.snum=s.snum where s.sname='Serres');
+54. select * from orders where month(odate)=10 and day(odate) in(3,4); 
+55. 
