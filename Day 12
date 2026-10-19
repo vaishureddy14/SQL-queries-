@@ -1,0 +1,5 @@
+56. select * from customers where rating > all(select rating from customers where city='Rome');
+57. select * from customers where rating > 100 or city='Rome';
+58. select * from customers where snum=1001;
+59. select sum(o.amt) from orders o join salespeople s on o.snum=s.snum group by o.snum having sum(o.amt) > (select max(amt) from orders);
+60.  SELECT * FROM orders WHERE amt <> 0 AND amt IS NOT NULL;
