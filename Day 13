@@ -1,0 +1,5 @@
+61. 
+62. select sname as SALESPERSON,comm as COMMISSION from salespeople;
+63. 
+64. 
+65. select c.cname,c.rating from customers c join orders o on c.cnum=o.cnum where o.amt > (select avg(amt) from orders);
